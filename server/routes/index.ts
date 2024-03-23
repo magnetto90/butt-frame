@@ -15,12 +15,13 @@ export default eventHandler(async (event) => {
 
   const shortOwner = owner.slice(0, 6) + "..." + owner.slice(-4)
 
+  const plugInfo = await fetch(`https://bafybeidrn6w75xycuplw7zk34sxzs2qvcyjnbwivj4x7fsbuchwrafsvhe.ipfs.dweb.link/0797`).then(res => res.json())
+
   if (owner === "0x0000000000000000000000000000000000000000") {
     return `
     <!DOCTYPE html>
       <html>
         <head>
-          <title>Basic Frame</title>
           <meta
             property="og:image"
             content="https://frames-gilt.vercel.app/site-preview.jpg"
@@ -34,12 +35,12 @@ export default eventHandler(async (event) => {
             property="fc:frame:image:aspect_ratio"
             content="1:1"
           />
-          <meta property="fc:frame:button:1" content="Next" />
+          <meta property="fc:frame:button:1" content="Next Buttpluggy" />
           <meta
             property="fc:frame:post_url"
             content="${process.env.API_URL}"
           />
-          <meta name="fc:frame:button:2" content="More..." />
+          <meta name="fc:frame:button:2" content="Meet ${plugInfo["name"]}..." />
           <meta name="fc:frame:button:2:action" content="link" />
           <meta name="fc:frame:button:2:target" content="https://buttpluggy.com/buttpluggy/${random}" />
           <meta name="fc:frame:button:3" content="Not minted yet!! Try to mine it..." />
@@ -47,7 +48,7 @@ export default eventHandler(async (event) => {
           <meta name="fc:frame:button:3:target" content="https://buttpluggy.com/mine" />
         </head>
         <body>
-          <h1>Basic Frame</h1>
+          <h1>Pluggy Frame</h1>
         </body>
       </html>
     `
@@ -57,7 +58,6 @@ export default eventHandler(async (event) => {
     <!DOCTYPE html>
       <html>
         <head>
-          <title>Basic Frame</title>
           <meta
             property="og:image"
             content="https://frames-gilt.vercel.app/site-preview.jpg"
@@ -71,7 +71,7 @@ export default eventHandler(async (event) => {
             property="fc:frame:image:aspect_ratio"
             content="1:1"
           />
-          <meta property="fc:frame:button:1" content="Next" />
+          <meta property="fc:frame:button:1" content="Next Buttpluggy" />
           <meta
             property="fc:frame:post_url"
             content="${process.env.API_URL}"
@@ -82,7 +82,7 @@ export default eventHandler(async (event) => {
           <meta name="fc:frame:button:3" content="Owned by ${shortOwner}" />
         </head>
         <body>
-          <h1>Basic Frame</h1>
+          <h1>Pluggy Frame</h1>
         </body>
       </html>
     `
