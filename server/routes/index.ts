@@ -24,7 +24,7 @@ export default eventHandler(async (event) => {
         <head>
           <meta
             property="og:image"
-            content="https://frames-gilt.vercel.app/site-preview.jpg"
+            content="https://buttpluggy.com/buttpluggy/Bannermob.png"
           />
           <meta property="fc:frame" content="vNext" />
           <meta
@@ -60,7 +60,7 @@ export default eventHandler(async (event) => {
         <head>
           <meta
             property="og:image"
-            content="https://frames-gilt.vercel.app/site-preview.jpg"
+            content="https://buttpluggy.com/buttpluggy/Bannermob.png"
           />
           <meta property="fc:frame" content="vNext" />
           <meta
