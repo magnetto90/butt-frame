@@ -37,7 +37,7 @@ export default eventHandler(async (event) => {
           <meta property="fc:frame:button:1" content="Next" />
           <meta
             property="fc:frame:post_url"
-            content="${process.env.URL}"
+            content="${process.env.API_URL}"
           />
           <meta name="fc:frame:button:2" content="More..." />
           <meta name="fc:frame:button:2:action" content="link" />
@@ -74,7 +74,7 @@ export default eventHandler(async (event) => {
           <meta property="fc:frame:button:1" content="Next" />
           <meta
             property="fc:frame:post_url"
-            content="${process.env.URL}"
+            content="${process.env.API_URL}"
           />
           <meta name="fc:frame:button:2" content="More..." />
           <meta name="fc:frame:button:2:action" content="link" />
