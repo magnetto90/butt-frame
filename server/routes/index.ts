@@ -76,7 +76,7 @@ export default eventHandler(async (event) => {
             property="fc:frame:post_url"
             content="${process.env.API_URL}"
           />
-          <meta name="fc:frame:button:2" content="More..." />
+          <meta name="fc:frame:button:2" content="Meet ${plugInfo["name"]}..." />
           <meta name="fc:frame:button:2:action" content="link" />
           <meta name="fc:frame:button:2:target" content="https://buttpluggy.com/buttpluggy/${random}" />
           <meta name="fc:frame:button:3" content="Owned by ${shortOwner}" />
