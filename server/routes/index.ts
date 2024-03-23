@@ -15,7 +15,7 @@ export default eventHandler(async (event) => {
 
   const shortOwner = owner.slice(0, 6) + "..." + owner.slice(-4)
 
-  const plugInfo = await fetch(`https://bafybeidrn6w75xycuplw7zk34sxzs2qvcyjnbwivj4x7fsbuchwrafsvhe.ipfs.dweb.link/0797`).then(res => res.json())
+  const plugInfo = await fetch(`https://bafybeidrn6w75xycuplw7zk34sxzs2qvcyjnbwivj4x7fsbuchwrafsvhe.ipfs.dweb.link/${random}`).then(res => res.json())
 
   if (owner === "0x0000000000000000000000000000000000000000") {
     return `
